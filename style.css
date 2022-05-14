@@ -1,0 +1,413 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0%;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.show{position: relative;}
+
+body{
+  background-color: rgb(184, 184, 35);  
+}
+
+h1.label{
+    position: relative;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 65px;
+    color: yellow;
+    font-weight: 900;
+    font-family: 'Poppins',sans-serif;
+    display: inline-block;
+}
+
+/* ----------------------- NAVIGATION -----------------------*/
+
+nav i{
+    border: 10px solid rgb(13, 16, 102);
+    border-radius: 50%;
+    background-color: rgb(13, 16, 102);
+    font-size: 16px;
+}
+
+nav i:hover{
+    color: white;
+    background-color: rgb(23, 30, 230);
+    border-color: rgb(23, 30, 230);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: rgb(17,8,0);
+    background: linear-gradient(115deg, rgba(17,8,0,1) 19%, rgba(126,68,10,1) 59%, rgba(244,244,5,1) 84%, rgba(195,195,49,1) 95%); */
+    background: rgb(17,8,0);
+    background: linear-gradient(115deg, rgba(17,8,0,1) 16%, rgba(126,68,10,1) 72%, rgba(199,108,18,0.9780287114845938) 94%);
+    border-bottom: .8px solid white;
+    z-index: 3;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 170px;
+    font-size: 16px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 50px;
+}
+
+nav ul li a{color: rgb(175, 175, 18);}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 25px;
+}
+
+nav .text{
+    font-size: 20px;
+    position: relative;
+    display: block;
+}
+
+nav .text:hover{
+    color: yellow;
+}
+
+nav .text::after{
+    content:'';
+  position:absolute;
+  height:0.175rem;
+  width:0%;
+  background:#7e440a; /*#7e440a*/
+  left:0;
+  bottom:-3px;
+  transition: width .5s ease;
+}
+
+ul li a:hover::after{
+    width:100%;
+  }
+/* ----------------------- MAIN -----------------------*/
+main{
+    width: 100%;
+    height: 17cm;
+    background-image: url('background.jpg');
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+main::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+.w1 , .w2{
+    color: yellow;
+    font-size: 100px;
+    word-wrap: break-word;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    text-shadow: -5px -1px white;
+}
+
+.w1{
+    transform: translate(-240px,-150px) ;
+}
+
+.w2{
+    color: #7e440a;
+    transform: translate(-70px,-40px);
+}
+
+div.logo q{
+    color: whitesmoke;
+    font-style: italic;
+    font-size: 14px;
+    display: block;
+    margin-top: 65%;
+    margin-left: 160px;
+}
+
+div.nft-cont{
+    position: relative;
+}
+
+.nft{
+    border-radius: 15px;
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+    margin-top: 20%;
+    position: relative;
+    border: 1px solid whitesmoke;
+    -webkit-box-shadow: 15px 21px 14px 12px rgba(255,252,125,0.71); 
+    box-shadow: 15px 21px 14px 12px rgba(255,252,125,0.71);
+}
+
+main .container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template: auto/50% 50%;
+    column-gap: 5px;
+}
+
+/* ----------------------- TEAM -----------------------*/
+
+div.wrap{
+    width: 100%;
+    height: auto;
+    background-image: url(wolf-face.webp);
+    background-position: 0px -170px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.wrap::before{
+    content:'';
+    position:absolute;
+    right:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.568);
+}
+
+
+
+
+div.team{
+    position: relative;
+    border-top: 2px solid white;
+    margin-bottom: 100px;;
+    display: grid;
+    height: 700px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.team div{
+    border: 3px solid rgb(153, 105, 2);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 0px rgba(212, 193, 80, 0.71),
+    -2px -2px rgba(212, 193, 80, 0.71);
+}
+
+div.team img{
+    height: auto;
+    width:70%;
+    margin: auto;
+}
+
+p.name{
+    font-family: 'Poppins',sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 4px;
+    color: orangered;
+    text-shadow: -2px 2px #2833a4ff;
+}
+
+p.desc{
+    text-align: center;
+    color: rgb(63, 5, 5);
+}
+
+hr{
+    position: relative;
+    border-top: 10px dashed rgba(31, 29, 29, 0.911);
+    border-bottom: none;
+    z-index: 1;
+}
+
+/* ----------------------- ROADMAP -----------------------*/
+
+section.road-map{
+    background-image: url(road.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    height: 18cm;
+    position: relative;
+    background-size: 100%;
+    background-position: 0 -300px;
+}
+
+section.road-map::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .55;
+}
+
+.rmc{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.rmc h1.sub{
+    color: #FFAF02;
+    font-size: 40px;
+    margin: 10px 0 0 40px;
+    display: block;
+}
+
+.rmlist{
+    margin: 25px;
+}
+
+.rmc ul{
+    font-size: 20px;
+
+    list-style-type: disc;
+}
+.rmc ul li{
+    margin-bottom: 10px;
+}
+
+/* ----------------------- FOOTER -----------------------*/
+
+footer{
+    background-color: red;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-image: url(dark-cubes.jpg);
+    background-size: contain;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background-color: yellow;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+}
+
+.place{
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    z-index: -2;
+}
+
+div.grid-container{
+    position: relative;
+    display: grid;
+    grid-template-areas: 'tribe info contact'
+                        'social info contact';
+    background-color: rebeccapurple;
+    width: 90%;
+    margin: 90px auto 0 auto;
+    padding: 20px;
+}
+
+
+
+.tribe{
+    grid-area: tribe;
+    font-size: 50px;
+    color: #FFAF02;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+}
+
+.info{
+    grid-area: info;
+}
+
+.contact{
+    grid-area: contact;
+}
+
+.contact li a{
+    color: rgb(182, 176, 176);
+}
+
+.contact  li a:hover{
+    color: white;
+}
+
+.socials{
+    grid-area: social;
+}
+
+.socials li{
+    display:inline-block;
+    margin-left: 50px;
+    font-size: large;
+}
+
+.socials li a{
+    color: rgb(182, 176, 176);
+}
+
+.socials li a:hover{
+    color: white;
+}
+
+.adj{
+    list-style-type: none;
+    color: #FFFFFF99;
+}
+
+.adj li{
+    margin-top: 10px;
+}
+/* footer div{
+    height: 300px;
+    width: 70%;
+    margi
+} */
+/*
+ #FFFFFF99 --> white
+ #FFAF02
+ .test{
+    background-color: red;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+}
+.support{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-color: blue;
+    z-index: -2;
+} */
